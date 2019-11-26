@@ -1,0 +1,23 @@
+name: packages/monorepo-ops
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'squab/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - run: echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> squab/.npmrc
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: |
+          cd squab
+          npm publish

@@ -1,0 +1,17 @@
+{
+  "name": "@amsaace/squab",
+  "version": "1.0.0",
+  "description": "squab food",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amsaace/test-packages.git",
+    "directory": "food"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}

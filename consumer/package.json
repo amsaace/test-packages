@@ -1,0 +1,15 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "consumer",
+  "main": "index.js",
+  "repository": "git://github.com/amsaace/test-packages.git",
+  "author": "amsa",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@amsaace/squab": "^1.0.0"
+  }
+}

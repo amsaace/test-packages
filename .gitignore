@@ -1,0 +1,15 @@
+#ide
+.idea
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# rc files
+.npmrc
+.yarnrc
+
