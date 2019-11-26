@@ -1,11 +1,11 @@
-name: packages/monorepo-ops
+name: squab
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'squab/*'
+      - 'food/squab/*'
 
 jobs:
   build:
