@@ -15,9 +15,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - run: echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> squab/.npmrc
+      - run: echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> food/squab/.npmrc
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: |
-          cd squab
+          cd food/squab
           npm publish
