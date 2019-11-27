@@ -5,7 +5,7 @@
 1. Add .npmrc file to the consumer folder
 
 `
-//npm.pkg.github.com/:_authToken=PERSONAL_ACCESS_TOKEN
+//npm.pkg.github.com/:_authToken=PERSONAL_ACCESS_TOKEN  
 @amsaace:registry=https://npm.pkg.github.com/
 `
 
